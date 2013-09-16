@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="friends.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "prototype": "ui/friends.reel",
+            "properties": {
+                "element": {"#": "friends"}
+            }
+        },
+        "actionEventListener1": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "toggle",
+                "handler": {"@": "menu1"}
+            }
+        },
+        "button1": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "button2": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "button3": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Filter"
+            }
+        },
+        "button4": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "object2"},
+                "enabled": true,
+                "label": "≡"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener1"}
+                }
+            ]
+        },
+        "form1": {
+            "prototype": "digit/ui/form.reel",
+            "properties": {
+                "element": {"#": "form"}
+            }
+        },
+        "list1": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "contentController": {"@": "rangeController1"}
+            }
+        },
+        "listItem1": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "listItem"}
+            }
+        },
+        "listItem2": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "object3"},
+                "componentClassName": ""
+            }
+        },
+        "listItem3": {
+            "prototype": "digit/ui/list-item.reel"
+        },
+        "listItem4": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "object8"}
+            }
+        },
+        "menu1": {
+            "prototype": "digit/ui/menu.reel",
+            "properties": {
+                "element": {"#": "menu"}
+            }
+        },
+        "object5": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "object5"}
+            }
+        },
+        "rangeController1": {
+            "prototype": "montage/core/range-controller",
+            "properties": {
+                "content": [
+                    "Adam Solove",
+                    "Cookie Monster"
+                ]
+            }
+        },
+        "text1": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            }
+        },
+        "text2": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@list1.objectAtCurrentIteration"}
+            }
+        },
+        "text3": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "object4"},
+                "value": "Family"
+            }
+        },
+        "text4": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "object6"},
+                "value": "Colleagues"
+            }
+        },
+        "text5": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "object9"},
+                "value": "Baseball league"
+            }
+        },
+        "title1": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
+                "value": "Friends"
+            }
+        },
+        "title2": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "object"},
+                "value": "Filter friends"
+            }
+        },
+        "toggleSwitch1": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "toggle"}
+            }
+        },
+        "toggleSwitch2": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "object7"}
+            }
+        },
+        "toggleSwitch3": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "object10"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="friends" class="Friends">
+        <div data-montage-id="menu">
+            <h1 data-montage-id="object"></h1>
+            <ul data-montage-id="form">
+                <li data-montage-id="object3">
+                    <span data-montage-id="object4"></span>
+                    <div data-montage-id="toggle"></div>
+                </li>
+                <li data-montage-id="object5">
+                    <span data-montage-id="object6"></span>
+                    <div data-montage-id="object7"></div>
+                </li>
+                <li data-montage-id="object8">
+                    <span data-montage-id="object9"></span>
+                    <div data-montage-id="object10"></div>
+                </li>
+            </ul>
+            <button data-montage-id="button"></button>
+        </div>
+        <div class="content">
+            <button data-montage-id="object2" id="menu-button"></button>
+            <h1 data-montage-id="title"></h1>
+            <ul data-montage-id="list">
+                <li data-montage-id="listItem">
+                    <span data-montage-id="text"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

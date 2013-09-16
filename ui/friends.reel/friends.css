@@ -1,0 +1,30 @@
+.Friends {
+    background: #333;
+}
+.Friends > div > * {
+    padding: 10px;
+}
+
+.Friends .content {
+    background-color: #ddd;
+    min-height: 800px;
+    box-shadow: 2px 0px 2px black;
+}
+
+#menu-button {
+    padding: 0px;
+    border-radius: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    height: 1em;
+    width: 1em;
+    min-width: 0px;
+    float: left;
+    line-height: 0;
+    color: #999;
+    padding-bottom: 8px;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}

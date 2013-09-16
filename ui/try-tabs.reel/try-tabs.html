@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="try-tabs.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "prototype": "ui/try-tabs.reel",
+            "properties": {
+                "element": {"#": "tryTabs"}
+            }
+        },
+        "friends1": {
+            "prototype": "ui/friends.reel",
+            "properties": {
+                "element": {"#": "friends"}
+            }
+        },
+        "manualTable1": {
+            "prototype": "ui/manual-table.reel",
+            "properties": {
+                "element": {"#": "manualTable"}
+            }
+        },
+        "pictures1": {
+            "prototype": "ui/pictures.reel",
+            "properties": {
+                "element": {"#": "object4"}
+            }
+        },
+        "tabButton2": {
+            "prototype": "digit/ui/tab-button.reel",
+            "properties": {
+                "element": {"#": "tab-button"},
+                "label": "Settings",
+                "view": {"@": "manualTable1"}
+            }
+        },
+        "tabButton3": {
+            "prototype": "digit/ui/tab-button.reel",
+            "properties": {
+                "element": {"#": "object"},
+                "label": "Friends",
+                "view": {"@": "friends1"}
+            }
+        },
+        "tabButton4": {
+            "prototype": "digit/ui/tab-button.reel",
+            "properties": {
+                "element": {"#": "object2"},
+                "label": "Pictures",
+                "view": {"@": "pictures1"}
+            }
+        },
+        "tabButton5": {
+            "prototype": "digit/ui/tab-button.reel"
+        },
+        "tabButton6": {
+            "prototype": "digit/ui/tab-button.reel",
+            "properties": {
+                "element": {"#": "object3"},
+                "label": "Events"
+            }
+        },
+        "tabs1": {
+            "prototype": "digit/ui/tabs.reel",
+            "properties": {
+                "element": {"#": "tabs"},
+                "default_tab": {"@": "tabButton3"},
+                "defaultTab": {"@": "tabButton3"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="tryTabs" class="TryTabs">
+        <div data-montage-id="tabs">
+            <div data-arg="views">
+                <div data-montage-id="object4"></div>
+                <div data-montage-id="friends"></div>
+                <div data-montage-id="manualTable"></div>
+            </div>
+            <div data-arg="tabs">
+                <div data-montage-id="object"></div>
+                <div data-montage-id="object2"></div>
+                <div data-montage-id="object3"></div>
+                <div data-montage-id="tab-button"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

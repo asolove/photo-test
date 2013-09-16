@@ -15,16 +15,16 @@
     "properties": {
       "name": null,
       "blueprintModule": {
-        "%": "ui/main.reel/main.meta"
+        "%": "ui/try-tabs.reel/try-tabs.meta"
       },
       "parent": {"@": "blueprint_component_reference"},
       "propertyBlueprintGroups": {
-        "Main": []
+        "TryTabs": []
       },
       "module": {
-        "%": "ui/main.reel"
+        "%": "ui/try-tabs.reel"
       },
-      "exportName": "Main"
+      "exportName": "TryTabs"
     }
   }
 }
